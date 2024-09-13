@@ -1,30 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
     <div class="Menu">
         <br>
         <div class="Logo">Something</div>
-    
         <input class="TextBox" type="text" placeholder="Search">
     </div>
+
+    <div class="Information">
+        <h1>Welcome to Car Dealership</h1>
+        <p>
+            We offer the best deals on both new and used cars. Browse through our selection, 
+            purchase your next car, or sell your current one with ease.
+        </p>
+        <p>
+            Check out our shop section to find the perfect car for you, or head over to our 
+            messages page if you have any questions or inquiries.
+        </p>
+        <p>
+            Your satisfaction is our priority. Learn more about our team on the <a href="about.html">About Us</a> page.
+        </p>
+    </div>
+    
+    <div class="Information" style="margin-top: 350px; min-height: 390px;">
+        <h1>How to Start?</h1>
+        <p>
+            Getting started is easy! Here's a quick guide to help you make the most of our website:
+        </p>
+        <ol>
+            <li>
+                <strong>Browse Cars:</strong> Head over to the <a href="buy.html" style="color: blue;">Buy Cars</a> section to explore our wide range of vehicles. Whether you're looking for a new car or a used one, we have something for everyone.
+            </li>
+            <li>
+                <strong>Sell Your Car:</strong> If you're interested in selling your car, visit the <a href="sell.html" style="color: blue;">Sell Cars</a> page. Fill out the details of your car, and we'll help you find a buyer quickly.
+            </li>
+            <li>
+                <strong>Check Your Messages:</strong> Have any questions or inquiries? Go to the <a href="messages.html" style="color: blue;">Messages</a> page to get in touch with us or review any correspondence you’ve had with our team.
+            </li>
+            <li>
+                <strong>Learn More About Us:</strong> Want to know who we are? Visit our <a href="about.html" style="color: blue;">About Us</a> page to learn more about our mission, team, and what makes us stand out in the market.
+            </li>
+        </ol>
+        <p>
+            We hope you enjoy your experience! If you have any questions, feel free to reach out via the <a href="messages.html" style="color: blue;">Messages</a> page.
+        </p>
+    </div>
+    
+
     <div class="Menuleft">
-        <button class="currentbtn" type="button" id="b1"><img class="img" src="Icons/home.png" alt="Start"><sup><a href="home.html">Home</a></sup></button>
-        <button class="btn" type="button" id="b2"><img class="img" src="Icons/shopping-cart.png" alt="Shop cart"><sup><a href="buy.html">Buy Cars</a></sup></button>
-        <button class="btn" type="button" id="b3"><img class="img" src="Icons/chart-histogram.png" alt="Diagram"><sup><a href="sell.html">Sell Cars</a></sup></button>
-        <button class="btn" type="button" id="b4"><img class="img" src="Icons/comment-alt.png" alt="Messages"><sup><a href="messages.html">Messages</a></sup></button>
-        <button class="btn" type="button" id="b5"><img class="img" src="Icons/seartch-alt.png" alt="About us"><sup><a href="about.html">About us</a></sup></button>
-        <p style="padding-top: 70%;"></p>
-        <button class="btn" type="button" id="b5"><img class="img" src="Icons/settings.png" alt="Settings"><sup><a href="settings.html">Settings</a></sup></button>
-        <button class="btn" type="button" id="b5"><img class="img" src="Icons/address-card.png" alt="Log Out"><sup><a href="log.html">Log Out</a></sup></button>
+        <div class="NavigationGroup">
+            <button class="currentbtn" type="button" id="b1">
+                <img class="img" src="Icons/home.png" alt="Start">
+                <sup><a href="index.html">Home</a></sup>
+            </button>
+
+            <button class="btn" type="button" id="b2">
+                <img class="img" src="Icons/shopping-cart.png" alt="Shop cart">
+                <sup><a href="buy.html">Buy Cars</a></sup>
+            </button>
+
+            <button class="btn" type="button" id="b3">
+                <img class="img" src="Icons/chart-histogram.png" alt="Diagram">
+                <sup><a href="sell.html">Sell Cars</a></sup>
+            </button>
+
+            <button class="btn" type="button" id="b4">
+                <img class="img" src="Icons/comment-alt.png" alt="Messages">
+                <sup><a href="messages.html">Messages</a></sup>
+            </button>
+
+            <button class="btn" type="button" id="b5">
+                <img class="img" src="Icons/seartch-alt.png" alt="About us">
+                <sup><a href="about.html">About us</a></sup>
+            </button>
+        </div>
+
+        <div class="FooterButtons">
+            <button class="btn" type="button" id="b6">
+                <img class="img" src="Icons/settings.png" alt="Settings">
+                <sup><a href="settings.html">Settings</a></sup>
+            </button>
+
+            <button class="btn" type="button" id="b7">
+                <img class="img" src="Icons/address-card.png" alt="Log Out">
+                <sup><a href="log.html">Log Out</a></sup>
+            </button>
+        </div>
     </div>
 </body>
 </html>

@@ -78,12 +78,43 @@ button {
     box-shadow: 0px 0px 5px rgb(59, 103, 67);
 }
 
-button:hover{
-    transform: translateY(-2px);
-    transition: transform 0.1s ease-in-out;
+button {
+    transform: translateY(0); /* Ensure the button starts at its default position */
+    transition: transform 0.2s ease-in-out; /* Transition applies both to hover and return states */
 }
+
+button:hover {
+    transform: translateY(-2px); /* Moves up when hovered */
+}
+
+.Information {
+    transform: translateY(0); /* Default position */
+    transition: transform 0.5s ease-in-out; /* Smooth transition on hover and return */
+}
+
+.Information:hover {
+    transform: translateY(-5px); /* Moves up when hovered */
+}
+
+.Information {
+    position: absolute;
+    padding: 20px;
+    margin: auto;
+    width: 650px;
+    height: 250px;
+    margin-left: 270px;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
 
 .TextBox::placeholder {
     color: white;
     opacity: 1;
+}
+
+.FooterButtons {
+    padding-top: 70%;
 }
