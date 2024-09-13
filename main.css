@@ -7,7 +7,7 @@ body {
 .TextBox {
     background: url('Icons/search.png') no-repeat;
     position: absolute;
-    margin: 20px 0px 0px 200px;
+    margin: -5px 0px 0px 300px;
     background-size: 30px 30px;
     background-position: 5px center;
     border: 0;
@@ -21,6 +21,17 @@ body {
     font-size: 16px;
 }
 
+.Logo {
+    background: url('Icons/logo.png') no-repeat;
+    position: absolute;
+    margin: 5px 0px 0px 50px;
+    background-size: 30px 30px;
+    width: 330px;
+    height: 30px;
+    padding-left: 40px;
+    font-size: 16px;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -30,14 +41,14 @@ a {
     background-color: hsl(144, 57%, 80%);
     color: white;
     width: auto;
-    height: auto;
+    height: 70px;
 }
 
 .Menuleft {
     background-color: #AFE9C6;
     height: 2024px;
     width: 248px;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .currentbtn {
