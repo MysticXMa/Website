@@ -79,21 +79,21 @@ button {
 }
 
 button {
-    transform: translateY(0); /* Ensure the button starts at its default position */
-    transition: transform 0.2s ease-in-out; /* Transition applies both to hover and return states */
+    transform: translateY(0);
+    transition: transform 0.2s ease-in-out;
 }
 
 button:hover {
-    transform: translateY(-2px); /* Moves up when hovered */
+    transform: translateY(-2px);
 }
 
 .Information {
-    transform: translateY(0); /* Default position */
-    transition: transform 0.5s ease-in-out; /* Smooth transition on hover and return */
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
 }
 
 .Information:hover {
-    transform: translateY(-5px); /* Moves up when hovered */
+    transform: translateY(-5px);
 }
 
 .Information {
