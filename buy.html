@@ -17,10 +17,9 @@
     
         <input class="TextBox" type="text" placeholder="Search">
     </div>
-    <h1 style="margin-left: 300px; margin-top: 3%; position: absolute; z-index: 2;">Buy Cars</h1>
-            
+    <h1 style="margin-left: 300px; margin-top: 15px; position: absolute; z-index: 2;">Buy Cars</h1>
             <div>
-                <select class="Options" style="margin-left: 280px; margin-top: 8%; width: 120px; height: 25px; position: absolute; z-index: 2;" name="Type" id="">
+                <select class="Options" style="margin-left: 280px; margin-top: 70px; width: 120px; height: 25px; position: absolute; z-index: 2;" name="Type" id="">
                     <option style="text-align: center;" value="New">New</option>
                     <option style="text-align: center;" value="Old">Old</option>
                     <option style="text-align: center;" value="Cheapest">Cheapest</option>
@@ -30,7 +29,7 @@
                 </select>
             </div>
             <div>
-                <select class="Options" style="margin-left: 420px; margin-top: 8%; width: 120px; height: 25px; position: absolute; z-index: 2;" name="Type" id="">
+                <select class="Options" style="margin-left: 420px; margin-top: 70px; width: 120px; height: 25px; position: absolute; z-index: 2;" name="Type" id="">
                     <option style="text-align: center;" value="Volvo">Volvo</option>
                     <option style="text-align: center;" value="Lamborghini">Lamborghini</option>
                     <option style="text-align: center;" value="BMW">BMW</option>
@@ -39,33 +38,196 @@
                     <option style="text-align: center;" value="Other">Other...</option>
                 </select>
             </div>
-    <div style="margin-left: 250px; margin-top: 10%; position: absolute;" class="CarContainer">
-        <div>
-            <img id="Heart1" onclick="HeartChange('Heart1','Icons/heartFull.png','Icons/heart.png')" style="width: 20px; float: right; margin-right: 10px;" src="Icons/heart.png" alt="Heart1"><h1 style="font-size: 20px; margin: auto;">Lamborghini Huracan LP580-2</h1>
-            <p>Coupe</p>
-            <img class="Car" style="width: 100%; height: auto;" src="Cars/Car1.png" alt="Car1">
-            <br>
-            <hr>
-            <img src="Icons/user.png" style="width: 5%; margin-top: 10px;" alt=""><sup style="font-size: 20px;"> 5</sup><img src="Icons/refresh.png" style="width: 5%; margin-top: 10px; margin-left: 5%;" alt=""><sup style="font-size: 20px;"> Manual</sup><sup style="margin-left: 50%; font-size: 20px;">$400<b style="color: rgb(168, 168, 168);">/d</b></sup>
-        </div>
-        <div>
-            <img id="Heart1" onclick="HeartChange('Heart1','Icons/heartFull.png','Icons/heart.png')" style="width: 20px; float: right; margin-right: 10px;" src="Icons/heart.png" alt="Heart1"><h1 style="font-size: 20px; margin: auto;">Lamborghini Huracan LP580-2</h1>
-            <p>Coupe</p>
-            <img class="Car" style="width: 100%; height: auto;" src="Cars/Car1.png" alt="Car1">
-            <br>
-            <hr>
-            <img src="Icons/user.png" style="width: 5%; margin-top: 10px;" alt=""><sup style="font-size: 20px;"> 14</sup><img src="Icons/refresh.png" style="width: 5%; margin-top: 10px; margin-left: 5%;" alt=""><sup style="font-size: 20px;"> Manual</sup><sup style="margin-left: 50%; font-size: 20px;">$250<b style="color: rgb(168, 168, 168);">/d</b></sup>
-        </div>
-        <div>
-            <img id="Heart1" onclick="HeartChange('Heart1','Icons/heartFull.png','Icons/heart.png')" style="width: 20px; float: right; margin-right: 10px;" src="Icons/heart.png" alt="Heart1"><h1 style="font-size: 20px; margin: auto;">Lamborghini Huracan LP580-2</h1>
-            <p>Coupe</p>
-            <img class="Car" style="width: 100%; height: auto;" src="Cars/Car1.png" alt="Car1">
-            <br>
-            <hr>
-            <img src="Icons/user.png" style="width: 5%; margin-top: 10px;" alt=""><sup style="font-size: 20px;"> 8</sup><img src="Icons/refresh.png" style="width: 5%; margin-top: 10px; margin-left: 5%;" alt=""><sup style="font-size: 20px;"> Manual</sup><sup style="margin-left: 50%; font-size: 20px;">$700<b style="color: rgb(168, 168, 168);">/d</b></sup>
-        </div>
-    </div>
-    
+            <!--Car Information!-->
+            <div class="Cars">
+                <div class="CarContainer" style="margin-top: 125px;">
+                    <div class="CarInfo">
+                        <img id="Heart1" onclick="HeartChange('Heart1','Icons/heartFull.png','Icons/heart.png')" class="HeartIcon" src="Icons/heart.png" alt="Heart1">
+                        <h1>Lamborghini Aventador SVJ</h1>
+                        <p>Coupe</p>
+                        <img style="display: block; margin-left: auto; margin-right: auto; width: 69%;" class="Car" src="Cars/Car1.png" alt="Car1">
+                        <hr>
+                        <div class="CarDetails">
+                            <div class="CarDetailItem">
+                                <img src="Icons/user.png" class="DetailIcon" alt=""><sup>18</sup>
+                            </div>
+                            <div class="CarDetailItem">
+                                <img src="Icons/refresh.png" class="DetailIcon" alt=""><sup>Automatic</sup>
+                            </div>
+                            <div class="CarPrice">
+                                <sup>$1,200<b>/d</b></sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="CarContainer" style="margin-top: 450px;">
+                    <div class="CarInfo">
+                        <img id="Heart2" onclick="HeartChange('Heart2','Icons/heartFull.png','Icons/heart.png')" class="HeartIcon" src="Icons/heart.png" alt="Heart1">
+                        <h1>Ferrari 488 Pista</h1>
+                        <p>Coupe</p>
+                        <img style="display: block; margin-left: auto; margin-right: auto; width: 66.5%;" class="Car" src="Cars/Car2.png" alt="Car2">
+                        <hr>
+                        <div class="CarDetails">
+                            <div class="CarDetailItem">
+                                <img src="Icons/user.png" class="DetailIcon" alt=""><sup>25</sup>
+                            </div>
+                            <div class="CarDetailItem">
+                                <img src="Icons/refresh.png" class="DetailIcon" alt=""><sup>Manual</sup>
+                            </div>
+                            <div class="CarPrice">
+                                <sup>$1,100<b>/d</b></sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="CarContainer" style="margin-top: 775px;">
+                    <div class="CarInfo">
+                        <img id="Heart3" onclick="HeartChange('Heart3','Icons/heartFull.png','Icons/heart.png')" class="HeartIcon" src="Icons/heart.png" alt="Heart1">
+                        <h1>Lamborghini Huracan LP580-2</h1>
+                        <p>Coupe</p>
+                        <img style="display: block; margin-left: auto; margin-right: auto; width: 80%;" class="Car" src="Cars/Car3.png" alt="Car3">
+                        <hr>
+                        <div class="CarDetails">
+                            <div class="CarDetailItem">
+                                <img src="Icons/user.png" class="DetailIcon" alt=""><sup>5</sup>
+                            </div>
+                            <div class="CarDetailItem">
+                                <img src="Icons/refresh.png" class="DetailIcon" alt=""><sup>Manual</sup>
+                            </div>
+                            <div class="CarPrice">
+                                <sup>$400<b>/d</b></sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--2nd Line-->
+            <div class="Cars" style="margin-left: 400px;">
+                <div class="CarContainer" style="margin-top: 125px;">
+                    <div class="CarInfo">
+                        <img id="Heart4" onclick="HeartChange('Heart4','Icons/heartFull.png','Icons/heart.png')" class="HeartIcon" src="Icons/heart.png" alt="Heart1">
+                        <h1>Aston Martin DB11</h1>
+                        <p>Coupe</p>
+                        <img style="display: block; margin-left: auto; margin-right: auto; width: 80%;" class="Car" src="Cars/Car4.png" alt="Car4">
+                        <hr>
+                        <div class="CarDetails">
+                            <div class="CarDetailItem">
+                                <img src="Icons/user.png" class="DetailIcon" alt=""><sup>15</sup>
+                            </div>
+                            <div class="CarDetailItem">
+                                <img src="Icons/refresh.png" class="DetailIcon" alt=""><sup>Automatic</sup>
+                            </div>
+                            <div class="CarPrice">
+                                <sup>$850<b>/d</b></sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="CarContainer" style="margin-top: 450px;">
+                    <div class="CarInfo">
+                        <img id="Heart5" onclick="HeartChange('Heart5','Icons/heartFull.png','Icons/heart.png')" class="HeartIcon" src="Icons/heart.png" alt="Heart1">
+                        <h1>McLaren 720S</h1>
+                        <p>Coupe</p>
+                        <img class="Car" src="Cars/Car5.png" alt="Car5">
+                        <hr>
+                        <div class="CarDetails">
+                            <div class="CarDetailItem">
+                                <img src="Icons/user.png" class="DetailIcon" alt=""><sup>20</sup>
+                            </div>
+                            <div class="CarDetailItem">
+                                <img src="Icons/refresh.png" class="DetailIcon" alt=""><sup>Automatic</sup>
+                            </div>
+                            <div class="CarPrice">
+                                <sup>$1,000<b>/d</b></sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="CarContainer" style="margin-top: 775px;">
+                    <div class="CarInfo">
+                        <img id="Heart6" onclick="HeartChange('Heart6','Icons/heartFull.png','Icons/heart.png')" class="HeartIcon" src="Icons/heart.png" alt="Heart1">
+                        <h1>Bentley Continental GT</h1>
+                        <p>Coupe</p>
+                        <img style="display: block; margin-left: auto; margin-right: auto; width: 110%;" class="Car" src="Cars/Car6.png" alt="Car6">
+                        <hr>
+                        <div class="CarDetails">
+                            <div class="CarDetailItem">
+                                <img src="Icons/user.png" class="DetailIcon" alt=""><sup>12</sup>
+                            </div>
+                            <div class="CarDetailItem">
+                                <img src="Icons/refresh.png" class="DetailIcon" alt=""><sup>Automatic</sup>
+                            </div>
+                            <div class="CarPrice">
+                                <sup>$1,000<b>/d</b></sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--3rd Line-->
+            <div class="Cars" style="margin-left: 800px;">
+                <div class="CarContainer" style="margin-top: 125px;">
+                    <div class="CarInfo">
+                        <img id="Heart7" onclick="HeartChange('Heart7','Icons/heartFull.png','Icons/heart.png')" class="HeartIcon" src="Icons/heart.png" alt="Heart1">
+                        <h1>BMW M4 Competition</h1>
+                        <p>Coupe</p>
+                        <img style="display: block; margin-left: auto; margin-right: auto; width: 67%;" class="Car" src="Cars/Car7.png" alt="Car7">
+                        <hr>
+                        <div class="CarDetails">
+                            <div class="CarDetailItem">
+                                <img src="Icons/user.png" class="DetailIcon" alt=""><sup>30</sup>
+                            </div>
+                            <div class="CarDetailItem">
+                                <img src="Icons/refresh.png" class="DetailIcon" alt=""><sup>Manual</sup>
+                            </div>
+                            <div class="CarPrice">
+                                <sup>$600<b>/d</b></sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="CarContainer" style="margin-top: 450px;">
+                    <div class="CarInfo">
+                        <img id="Heart8" onclick="HeartChange('Heart8','Icons/heartFull.png','Icons/heart.png')" class="HeartIcon" src="Icons/heart.png" alt="Heart1">
+                        <h1>Audi R8 V10 Plus</h1>
+                        <p>Coupe</p>
+                        <img style="display: block; margin-left: auto; margin-right: auto; width: 76.5%;" class="Car" src="Cars/Car8.png" alt="Car8">
+                        <hr>
+                        <div class="CarDetails">
+                            <div class="CarDetailItem">
+                                <img src="Icons/user.png" class="DetailIcon" alt=""><sup>28</sup>
+                            </div>
+                            <div class="CarDetailItem">
+                                <img src="Icons/refresh.png" class="DetailIcon" alt=""><sup>Automatic</sup>
+                            </div>
+                            <div class="CarPrice">
+                                <sup>$750<b>/d</b></sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="CarContainer" style="margin-top: 775px;">
+                    <div class="CarInfo">
+                        <img id="Heart9" onclick="HeartChange('Heart9','Icons/heartFull.png','Icons/heart.png')" class="HeartIcon" src="Icons/heart.png" alt="Heart1">
+                        <h1>Mercedes-Benz AMG GT R</h1>
+                        <p>Coupe</p>
+                        <img style="display: block; margin-left: auto; margin-right: auto; width: 121%;" class="Car" src="Cars/Car9.png" alt="Car9">
+                        <hr>
+                        <div class="CarDetails">
+                            <div class="CarDetailItem">
+                                <img src="Icons/user.png" class="DetailIcon" alt=""><sup>22</sup>
+                            </div>
+                            <div class="CarDetailItem">
+                                <img src="Icons/refresh.png" class="DetailIcon" alt=""><sup>Automatic</sup>
+                            </div>
+                            <div class="CarPrice">
+                                <sup>$850<b>/d</b></sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Car Information!-->
     <div class="Menuleft">
         <div class="NavigationGroup">
             <button class="btn" type="button" id="b1">

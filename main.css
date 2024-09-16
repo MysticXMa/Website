@@ -119,17 +119,69 @@ button:hover {
     padding-top: 70%;
 }
 
-.CarContainer {
+.Cars > div {
     display: flex;
+    flex-wrap: nowrap;
+    background-color: #f1f1f1;
+    margin-left: 270px;
+    line-height: 20px;
 }
-  
-.CarContainer > div {
-    background-color: #fff;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin: 20px 0px 0px 20px;
+
+.CarContainer {
+    position: absolute;
+    z-index: 10;
+    margin: 5% auto;
     padding: 20px;
+    max-width: 350px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(215, 215, 215, 0.375);
+    border: 2px solid #19d232;
+    box-shadow: 0 0 10px #19d232;
+    border-radius: 10px;
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.CarInfo h1 {
     font-size: 20px;
+}
+
+.CarInfo p {
+    margin: 5px 0;
+}
+
+.CarInfo .Car {
+    width: 100%;
+    height: auto;
+}
+
+.CarInfo .HeartIcon {
+    width: 20px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.CarDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.DetailIcon {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.CarPrice {
+    font-size: 20px;
+    color: #000;
+}
+
+.CarPrice b {
+    color: #A8A8A8;
 }
 
 .Options {
@@ -146,4 +198,9 @@ button:hover {
 .Car:hover {
     filter: sepia(100%);
     transition: filter 0.2s ease-in-out;
+}
+
+.CarContainer:hover{
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
 }
