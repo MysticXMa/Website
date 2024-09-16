@@ -8,13 +8,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buy Cars</title>
     <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
 </head>
 <body>
     <div class="Menu">
         <br>
-        <div class="Logo">Something</div>
+        <div class="Logo"><sub>Something</sub></div>
     
         <input class="TextBox" type="text" placeholder="Search">
+    </div>
+    <h1 style="margin-left: 300px; margin-top: 3%; position: absolute; z-index: 2;">Buy Cars</h1>
+            
+            <div>
+                <select class="Options" style="margin-left: 280px; margin-top: 8%; width: 120px; height: 25px; position: absolute; z-index: 2;" name="Type" id="">
+                    <option style="text-align: center;" value="New">New</option>
+                    <option style="text-align: center;" value="Old">Old</option>
+                    <option style="text-align: center;" value="Cheapest">Cheapest</option>
+                    <option style="text-align: center;" value="Expensive">Expensive</option>
+                    <option style="text-align: center;" value="Relevant">Relevant</option>
+                    <option style="text-align: center;" value="Other">Other...</option>
+                </select>
+            </div>
+            <div>
+                <select class="Options" style="margin-left: 420px; margin-top: 8%; width: 120px; height: 25px; position: absolute; z-index: 2;" name="Type" id="">
+                    <option style="text-align: center;" value="Volvo">Volvo</option>
+                    <option style="text-align: center;" value="Lamborghini">Lamborghini</option>
+                    <option style="text-align: center;" value="BMW">BMW</option>
+                    <option style="text-align: center;" value="Honda">Honda</option>
+                    <option style="text-align: center;" value="Ferrari">Ferrari</option>
+                    <option style="text-align: center;" value="Other">Other...</option>
+                </select>
+            </div>
+    <div style="margin-left: 250px; margin-top: 10%; position: absolute;" class="CarContainer">
+        <div>
+            <img id="Heart1" onclick="HeartChange('Heart1','Icons/heartFull.png','Icons/heart.png')" style="width: 20px; float: right; margin-right: 10px;" src="Icons/heart.png" alt="Heart1"><h1 style="font-size: 20px; margin: auto;">Lamborghini Huracan LP580-2</h1>
+            <p>Coupe</p>
+            <img class="Car" style="width: 100%; height: auto;" src="Cars/Car1.png" alt="Car1">
+            <br>
+            <hr>
+            <img src="Icons/user.png" style="width: 5%; margin-top: 10px;" alt=""><sup style="font-size: 20px;"> 5</sup><img src="Icons/refresh.png" style="width: 5%; margin-top: 10px; margin-left: 5%;" alt=""><sup style="font-size: 20px;"> Manual</sup><sup style="margin-left: 50%; font-size: 20px;">$400<b style="color: rgb(168, 168, 168);">/d</b></sup>
+        </div>
+        <div>
+            <img id="Heart1" onclick="HeartChange('Heart1','Icons/heartFull.png','Icons/heart.png')" style="width: 20px; float: right; margin-right: 10px;" src="Icons/heart.png" alt="Heart1"><h1 style="font-size: 20px; margin: auto;">Lamborghini Huracan LP580-2</h1>
+            <p>Coupe</p>
+            <img class="Car" style="width: 100%; height: auto;" src="Cars/Car1.png" alt="Car1">
+            <br>
+            <hr>
+            <img src="Icons/user.png" style="width: 5%; margin-top: 10px;" alt=""><sup style="font-size: 20px;"> 14</sup><img src="Icons/refresh.png" style="width: 5%; margin-top: 10px; margin-left: 5%;" alt=""><sup style="font-size: 20px;"> Manual</sup><sup style="margin-left: 50%; font-size: 20px;">$250<b style="color: rgb(168, 168, 168);">/d</b></sup>
+        </div>
+        <div>
+            <img id="Heart1" onclick="HeartChange('Heart1','Icons/heartFull.png','Icons/heart.png')" style="width: 20px; float: right; margin-right: 10px;" src="Icons/heart.png" alt="Heart1"><h1 style="font-size: 20px; margin: auto;">Lamborghini Huracan LP580-2</h1>
+            <p>Coupe</p>
+            <img class="Car" style="width: 100%; height: auto;" src="Cars/Car1.png" alt="Car1">
+            <br>
+            <hr>
+            <img src="Icons/user.png" style="width: 5%; margin-top: 10px;" alt=""><sup style="font-size: 20px;"> 8</sup><img src="Icons/refresh.png" style="width: 5%; margin-top: 10px; margin-left: 5%;" alt=""><sup style="font-size: 20px;"> Manual</sup><sup style="margin-left: 50%; font-size: 20px;">$700<b style="color: rgb(168, 168, 168);">/d</b></sup>
+        </div>
     </div>
     
     <div class="Menuleft">

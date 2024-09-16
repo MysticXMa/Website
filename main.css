@@ -118,3 +118,32 @@ button:hover {
 .FooterButtons {
     padding-top: 70%;
 }
+
+.CarContainer {
+    display: flex;
+}
+  
+.CarContainer > div {
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 20px 0px 0px 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.Options {
+    border: 3px rgb(255, 255, 255);
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.Car {
+    filter: sepia(0%);
+    transition: filter 0.5s ease-in-out;
+}
+
+.Car:hover {
+    filter: sepia(100%);
+    transition: filter 0.2s ease-in-out;
+}
