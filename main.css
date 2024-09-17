@@ -117,7 +117,7 @@ button:hover {
 }
 
 .FooterButtons {
-    padding-top: 70%;
+    padding-top: 100%;
 }
 
 .Cars > div {
@@ -204,4 +204,11 @@ button:hover {
 .test:hover {
     color: red;
     transition: color 0.2s ease-in-out;
+}
+
+.Start, .Start > img {
+    position: absolute;
+    margin-top: 10px;
+    right: 10px;
+    width: 30px;
 }
