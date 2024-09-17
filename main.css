@@ -2,6 +2,8 @@ body {
     background-color: #F6F6F6;
     font-family: "DM Sans", sans-serif;
     margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .TextBox {

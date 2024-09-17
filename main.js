@@ -10,3 +10,5 @@ function HeartChange(id, heartFull, heartNormal) {
         element.setAttribute('data-state', 'normal');
     }
 }
+
+// Hi :D
