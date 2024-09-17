@@ -48,7 +48,7 @@ a {
 
 .Menuleft {
     background-color: #AFE9C6;
-    height: 2024px;
+    height: 4000px;
     width: 248px;
     padding-top: 40px;
 }
@@ -101,7 +101,6 @@ button:hover {
 .Information {
     position: absolute;
     padding: 20px;
-    margin: auto;
     width: 650px;
     height: 250px;
     margin-left: 270px;
@@ -192,17 +191,17 @@ button:hover {
     border-style: solid;
 }
 
-.Car {
-    filter: sepia(0%);
-    transition: filter 0.5s ease-in-out;
-}
-
-.Car:hover {
-    filter: sepia(100%);
-    transition: filter 0.2s ease-in-out;
-}
-
 .CarContainer:hover{
     transform: translateY(-5px);
     transition: transform 0.3s ease-in-out;
+}
+
+.test {
+    color: rgb(50, 50, 255);;
+    transition: color 1s ease-in-out;
+}
+
+.test:hover {
+    color: red;
+    transition: color 0.2s ease-in-out;
 }

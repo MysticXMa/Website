@@ -3,10 +3,10 @@ function HeartChange(id, heartFull, heartNormal) {
     const currentState = element.getAttribute('data-state');
 
     if (currentState === 'normal') {
-        element.src = heartFull;
+        element.src = heartNormal;
         element.setAttribute('data-state', 'full');
     } else {
-        element.src = heartNormal;
+        element.src = heartFull;
         element.setAttribute('data-state', 'normal');
     }
 }
