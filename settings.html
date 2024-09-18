@@ -21,45 +21,122 @@
     
         <input class="TextBox" type="text" placeholder="Search">
     </div>
+
+    <div class="Settings">
+        <b style="font-size: 30px;">Settings</b>
+        <p></p>
+        <div style="display: flex; gap: 50px;">
+            <p style="opacity: 0.75;">My details</p>
+            <p>Profile</p>
+            <p style="opacity: 0.75;">Password</p>
+            <p style="opacity: 0.75;">Email</p>
+            <p style="opacity: 0.75;">Notification</p>
+        </div>
+        <p style="padding-top: 5px;"></p>
+        <b style="font-size: 18px;">Profile</b>
+        <p style="opacity: 0.75; margin-top: 0;">Update your photo and personal details here.</p>
+        <hr style="opacity: 0.75;">
+        
+        <form>
+            <div style="display: flex; gap: 30px;">
+                <div>
+                    <p style="opacity: 0.75; padding-top: 15px; margin-bottom: 10px;">Live in<span style="color: rgb(255, 0, 0);"><b>*</b></span></p>
+                    <input placeholder="Lahti, Finland" class="InfoBox" type="text" required>
+                </div>
+                <div>
+                    <p style="opacity: 0.75; padding-top: 15px; margin-bottom: 10px;">Street Address<span style="color: rgb(255, 0, 0);"><b>*</b></span></p>
+                    <input placeholder="Ståhlberginkatu 6" class="InfoBox" type="text" required>
+                </div>
+            </div>
+    
+            <div>
+                <p style="opacity: 0.75; padding-top: 15px; margin-bottom: 10px;">Email Address<span style="color: rgb(255, 0, 0);"><b>*</b></span></p>
+                <input style="background: url('Icons/envelope.png') no-repeat; background-size: 20px 20px; background-position: 10px;" placeholder="example@gmail.com" class="InfoBox" type="text" required>
+            </div>
+    
+            <div style="display: flex; gap: 30px;">
+                <div>
+                    <p style="opacity: 0.75; padding-top: 15px; margin-bottom: 10px;">Date of Birth<span style="color: rgb(255, 0, 0);"><b>*</b></span></p>
+                    <input style="background: url('Icons/cake-birthday.png') no-repeat; background-size: 20px 20px; background-position: 10px; padding-right: 10px; width: 313px;" class="InfoBox" type="date" required>
+                </div>
+                <div>
+                    <p style="opacity: 0.75; padding-top: 15px; margin-bottom: 10px;">Gender</p>
+                    <select style="background: url('Icons/venus-mars.png') no-repeat; background-size: 20px 20px; background-position: 10px; width: 150px;" class="InfoBox">
+                        <option style="background-color: #98c3a9;" value="None">- - -</option>
+                        <option style="background-color: #98c3a9;" value="Boy">Male</option>
+                        <option style="background-color: #98c3a9;" value="Girl">Female</option>
+                        <option style="background-color: #98c3a9;" value="Non-Binary">Non-Binary</option>
+                        <option style="background-color: #98c3a9;" value="Walmart Bag">Walmart Bag</option>
+                        <option style="background-color: #98c3a9;" value="Other">Other</option>
+                    </select>
+                </div>                
+            </div>
+            <br>
+            <hr style="opacity: 0.75;">
+            <div>
+                <br>
+                Your photo
+                <div style="display: flex; gap: 30px; position: absolute; margin-left: 70%;">
+                    <p style="padding-left: 10px; padding-right: 10px; margin: 0;">Delete</p>
+                    <p style="padding-left: 10px; padding-right: 10px; margin: 0;">Update</p>
+                </div>
+                <img src="Icons/user-pen.png" style="position: absolute; width: 50px; height: 50px; margin-left: 250px;" alt="">
+                <p style="opacity: 0.75; margin-top: 5px; margin-bottom: 30px;">This will be displayed on your profile.</p>
+                <hr style="opacity: 0.75;">
+            </div>
+    
+            <p style="position: absolute;">Social Profiles</p>
+            <div style="position: absolute; margin-left: 350px;">
+                <p><input style="background: no-repeat; padding-left: 10px;" placeholder="facebook.com/" class="InfoBox" type="text"></p>
+                <p><input style="background: no-repeat; padding-left: 10px;" placeholder="twitter.com/" class="InfoBox" type="text"></p>
+            </div>
+            <p style="padding-top: 110px;"></p>
+            <hr style="opacity: 0.75;">
+            <div style="display: flex; gap: 50px; margin-left: 150px; margin-top: 10px;">
+                <input style="background: no-repeat; padding-left: 10px;" class="InfoBox" type="submit" value="Submit">
+                <input style="background: no-repeat; padding-left: 10px;" class="InfoBox" type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
     
     <div class="Menuleft">
         <div class="NavigationGroup">
-            <button class="btn" type="button" id="b1">
+            <a href="index.html"><button class="btn" type="button" id="b1">
                 <img class="img" src="Icons/home.png" alt="Start">
-                <sup><a href="index.html">Home</a></sup>
-            </button>
+                <sup>Home</sup>
+            </button></a>
 
-            <button class="btn" type="button" id="b2">
+            <a href="buy.html"><button class="btn" type="button" id="b2">
                 <img class="img" src="Icons/shopping-cart.png" alt="Shop cart">
-                <sup><a href="buy.html">Buy Cars</a></sup>
-            </button>
+                <sup>Buy Cars</sup>
+            </button></a>
 
-            <button class="btn" type="button" id="b3">
+            <a href="sell.html"><button class="btn" type="button" id="b3">
                 <img class="img" src="Icons/chart-histogram.png" alt="Diagram">
-                <sup><a href="sell.html">Sell Cars</a></sup>
-            </button>
+                <sup>Sell Cars</sup>
+            </button></a>
 
-            <button class="btn" type="button" id="b4">
+            <a href="messages.html"><button class="btn" type="button" id="b4">
                 <img class="img" src="Icons/comment-alt.png" alt="Messages">
-                <sup><a href="messages.html">Messages</a></sup>
-            </button>
+                <sup>Messages</sup>
+            </button></a>
 
-            <button class="btn" type="button" id="b5">
+            <a href="about.html"><button class="btn" type="button" id="b5">
                 <img class="img" src="Icons/seartch-alt.png" alt="About us">
-                <sup><a href="about.html">About us</a></sup>
-            </button>
+                <sup>About us</sup>
+            </button></a>
         </div>
 
         <div class="FooterButtons">
-            <button class="currentbtn" type="button" id="b6">
+            <a href="settings.html"><button class="currentbtn" type="button" id="b6">
                 <img class="img" src="Icons/settings.png" alt="Settings">
-                <sup><a href="settings.html">Settings</a></sup>
-            </button>
+                <sup>Settings</sup>
+            </button></a>
 
-            <button class="btn" type="button" id="b7">
+            <a href="log.html"><button class="btn" type="button" id="b7">
                 <img class="img" src="Icons/address-card.png" alt="Log Out">
-                <sup><a href="log.html">Log Out</a></sup>
-            </button>
+                <sup>Log Out</sup>
+            </button></a>
         </div>
     </div>
 </body>
