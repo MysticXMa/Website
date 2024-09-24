@@ -1,250 +1,281 @@
+/* General body settings, changing background color, font style, and margin */
 body {
-    background-color: #F6F6F6;
-    font-family: "DM Sans", sans-serif;
-    margin: 0;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    background-color: #F6F6F6; /* Light grey background */
+    font-family: "DM Sans", sans-serif; /* Use DM Sans font, or fallback to sans-serif */
+    margin: 0; /* Remove default margin (prevents white borders) */
+    overflow-y: scroll; /* Ensure vertical scroll if needed */
+    overflow-x: hidden; /* Hide horizontal scroll */
 }
-
+ 
+/* Style for the search TextBox */
 .TextBox {
-    background: url('Icons/search.png') no-repeat;
-    position: absolute;
-    margin: -5px 0px 0px 300px;
-    background-size: 30px 30px;
-    background-position: 5px center;
-    border: 0;
-    width: 330px;
-    height: 30px;
-    background-color: #7FAE92;
-    box-shadow: 0px 0px 5px rgb(59, 103, 67);
-    border-radius: 4px;
-    padding-left: 40px;
-    color: white;
-    font-size: 16px;
+    background: url('Icons/search.png') no-repeat; /* Background image for search icon */
+    position: absolute; /* Absolutely positioned within its parent */
+    margin: -5px 0px 0px 300px; /* Adjusting its position with negative top margin */
+    background-size: 30px 30px; /* Size of the background icon */
+    background-position: 5px center; /* Position the icon inside the box */
+    border: 0; /* No border */
+    width: 330px; /* Width of the search box */
+    height: 30px; /* Height of the search box */
+    background-color: #7FAE92; /* Light green background */
+    box-shadow: 0px 0px 5px rgb(59, 103, 67); /* Soft green shadow around the box */
+    border-radius: 4px; /* Rounded corners */
+    padding-left: 40px; /* Padding to ensure text doesn’t overlap with the icon */
+    color: white; /* White text color */
+    font-size: 16px; /* Font size for text */
 }
-
+ 
+/* Style for the logo container */
 .Logo {
-    background: url('Icons/logo.png') no-repeat;
-    position: absolute;
-    margin: 5px 0px 0px 50px;
-    background-size: 30px 30px;
-    width: 330px;
-    height: 30px;
-    padding-left: 40px;
-    font-size: 16px;
+    background: url('Icons/logo.png') no-repeat; /* Logo background image */
+    position: absolute; /* Absolute positioning */
+    margin: 5px 0px 0px 50px; /* Positioning logo from the left */
+    background-size: 30px 30px; /* Size of the logo */
+    width: 330px; /* Width of the logo container */
+    height: 30px; /* Height of the logo container */
+    padding-left: 40px; /* Padding to align text away from logo */
+    font-size: 16px; /* Font size of the logo text */
 }
-
+ 
+/* Global link styles */
 a {
-    color: inherit;
-    text-decoration: none;
+    color: inherit; /* Links inherit the current text color */
+    text-decoration: none; /* Remove underline from links */
 }
-
+ 
+/* Main menu bar style */
 .Menu {
-    background-color: hsl(144, 57%, 80%);
-    color: white;
-    width: auto;
-    height: 70px;
+    background-color: hsl(144, 57%, 80%); /* Light green background using HSL */
+    color: white; /* White text */
+    width: auto; /* Automatically adjusts width */
+    height: 70px; /* Fixed height */
 }
-
+ 
+/* Sidebar style on the left */
 .Menuleft {
-    background-color: #AFE9C6;
-    height: 4000px;
-    width: 248px;
-    padding-top: 40px;
+    background-color: #AFE9C6; /* Light green background */
+    height: 4000px; /* Large height for content */
+    width: 248px; /* Fixed width for the sidebar */
+    padding-top: 40px; /* Padding from the top */
 }
-
+ 
+/* Button to indicate current active section */
 .currentbtn {
-    background-color: #58695F;
+    background-color: #58695F; /* Darker green for the active button */
 }
-
+ 
+/* Styling for small images (icons) */
 .img {
-    width: 18px;
-    height: 18px;
-    padding-right: 8px;
-    padding-left: 5px;
-    overflow: hidden;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    width: 18px; /* Fixed width for icons */
+    height: 18px; /* Fixed height for icons */
+    padding-right: 8px; /* Space to the right of the icon */
+    padding-left: 5px; /* Space to the left of the icon */
+    overflow: hidden; /* Prevent overflow */
+    -webkit-filter: grayscale(100%); /* Apply grayscale filter (Safari support) */
+    filter: grayscale(100%); /* Grayscale for other browsers */
 }
-
+ 
+/* Basic button styles */
 button {
-    border: 0;
-    background-color: #7FAE92;
-    text-align: left;
-    width: 155px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    margin-left: 35px;
-    padding: 3px;
-    color: white;
-    box-shadow: 0px 0px 5px rgb(59, 103, 67);
+    border: 0; /* Remove border */
+    background-color: #7FAE92; /* Light green background */
+    text-align: left; /* Align text to the left */
+    width: 155px; /* Button width */
+    border-radius: 4px; /* Rounded corners */
+    margin-bottom: 10px; /* Space below the button */
+    margin-left: 35px; /* Space to the left */
+    padding: 3px; /* Padding inside the button */
+    color: white; /* White text */
+    box-shadow: 0px 0px 5px rgb(59, 103, 67); /* Light shadow for 3D effect */
 }
-
+ 
+/* Button animation: slightly lifts when hovered */
 button {
-    transform: translateY(0);
-    transition: transform 0.2s ease-in-out;
+    transform: translateY(0); /* Initial position */
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
 }
-
+ 
 button:hover {
-    transform: translateY(-2px);
+    transform: translateY(-2px); /* Moves up on hover */
 }
-
+ 
+/* General container for information boxes */
 .Information {
-    transform: translateY(0);
-    transition: transform 0.5s ease-in-out;
+    transform: translateY(0); /* Initial position */
+    transition: transform 0.5s ease-in-out; /* Smooth animation */
 }
-
+ 
 .Information:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Moves up more on hover */
 }
-
+ 
+/* Styling for information boxes */
 .Information {
-    position: absolute;
-    padding: 20px;
-    width: 650px;
-    height: 250px;
-    margin-left: 270px;
-    margin-top: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    position: absolute; /* Positioned absolutely */
+    padding: 20px; /* Padding inside the container */
+    width: 650px; /* Width of the box */
+    height: 250px; /* Height of the box */
+    margin-left: 270px; /* Space from the left */
+    margin-top: 20px; /* Space from the top */
+    background-color: #fff; /* White background */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Light shadow */
+    border-radius: 5px; /* Rounded corners */
 }
-
-
+ 
+/* Placeholder text color in the search box */
 .TextBox::placeholder {
-    color: white;
-    opacity: 1;
+    color: white; /* White placeholder text */
+    opacity: 1; /* Full opacity */
 }
-
+ 
+/* Footer button styling */
 .FooterButtons {
-    padding-top: 100%;
+    padding-top: 100%; /* Pushed to bottom by adding large padding */
 }
-
+ 
+/* Styling for car containers in a list */
 .Cars > div {
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: #f1f1f1;
-    margin-left: 270px;
-    line-height: 20px;
+    display: flex; /* Flexbox layout */
+    flex-wrap: nowrap; /* No wrapping of items */
+    background-color: #f1f1f1; /* Light grey background */
+    margin-left: 270px; /* Space from the left */
+    line-height: 20px; /* Line height of 20px */
 }
-
+ 
+/* Styling for each car container */
 .CarContainer {
-    position: absolute;
-    z-index: 10;
-    margin: 5% auto;
-    padding: 20px;
-    max-width: 350px;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: rgba(215, 215, 215, 0.375);
-    border: 2px solid #19d232;
-    box-shadow: 0 0 10px #19d232;
-    border-radius: 10px;
-    transform: translateY(0);
-    transition: transform 0.5s ease-in-out;
+    position: absolute; /* Positioned absolutely */
+    z-index: 10; /* Higher stacking order */
+    margin: 5% auto; /* Centered with margins */
+    padding: 20px; /* Padding inside */
+    max-width: 350px; /* Maximum width */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Includes padding in the element’s width */
+    background-color: rgba(215, 215, 215, 0.375); /* Semi-transparent grey background */
+    border: 2px solid #19d232; /* Green border */
+    box-shadow: 0 0 10px #19d232; /* Green shadow */
+    border-radius: 10px; /* Rounded corners */
+    transform: translateY(0); /* Initial position */
+    transition: transform 0.5s ease-in-out; /* Smooth hover animation */
 }
-
+ 
+/* Car information title styling */
 .CarInfo h1 {
-    font-size: 20px;
+    font-size: 20px; /* Font size for car titles */
 }
-
+ 
+/* Styling for car description paragraphs */
 .CarInfo p {
-    margin: 5px 0;
+    margin: 5px 0; /* Margin above and below each paragraph */
 }
-
+ 
+/* Car image styling */
 .CarInfo .Car {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Full width for car images */
+    height: auto; /* Keep aspect ratio */
 }
-
+ 
+/* Heart icon inside the car info box */
 .CarInfo .HeartIcon {
-    width: 20px;
-    float: right;
-    margin-right: 10px;
-    cursor: pointer;
+    width: 20px; /* Small icon size */
+    float: right; /* Aligns the heart icon to the right */
+    margin-right: 10px; /* Space to the right */
+    cursor: pointer; /* Pointer cursor on hover */
 }
-
+ 
+/* Car detail section layout */
 .CarDetails {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
+    display: flex; /* Flex layout for details */
+    justify-content: space-between; /* Space between detail items */
+    align-items: center; /* Aligns items vertically */
+    margin-top: 10px; /* Space above the section */
 }
-
+ 
+/* Icons within the car details */
 .DetailIcon {
-    width: 20px;
-    margin-right: 5px;
+    width: 20px; /* Icon width */
+    margin-right: 5px; /* Space to the right */
 }
-
+ 
+/* Price styling for cars */
 .CarPrice {
-    font-size: 20px;
-    color: #000;
+    font-size: 20px; /* Large font size for the price */
+    color: #000; /* Black text */
 }
-
+ 
+/* Bolded price styling */
 .CarPrice b {
-    color: #A8A8A8;
+    color: #A8A8A8; /* Grey color for the bolded price */
 }
-
+ 
+/* Options styling */
 .Options {
-    border: 3px rgb(255, 255, 255);
-    border-radius: 10px;
-    border-style: solid;
+    border: 3px rgb(255, 255, 255); /* White border */
+    border-radius: 10px; /* Rounded corners */
+    border-style: solid; /* Solid border */
 }
-
-.CarContainer:hover{
-    transform: translateY(-5px);
-    transition: transform 0.3s ease-in-out;
+ 
+/* Slight hover lift for car container */
+.CarContainer:hover {
+    transform: translateY(-5px); /* Moves up when hovered */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
 }
-
+ 
+/* Test class for transition effect on color */
 .test {
-    color: rgb(50, 50, 255);;
-    transition: color 1s ease-in-out;
+    color: rgb(50, 50, 255); /* Initial color: blue */
+    transition: color 1s ease-in-out; /* Smooth color transition */
 }
-
+ 
 .test:hover {
-    color: red;
-    transition: color 0.2s ease-in-out;
+    color: red; /* Changes to red when hovered */
+    transition: color 0.2s ease-in-out; /* Faster transition when hovered */
 }
-
+ 
+/* Positioning for Start section and icon */
 .Start, .Start > img {
-    position: absolute;
-    margin-top: 10px;
-    right: 10px;
-    width: 30px;
+    position: absolute; /* Absolute position */
+    margin-top: 10px; /* Space from top */
+    right: 10px; /* Aligns to the right */
+    width: 30px; /* Icon width */
 }
-
+ 
+/* Settings container styling */
 .Settings {
-    position: absolute;
-    color: white;
-    padding: 20px;
-    width: 1000px;
-    height: 850px;
-    margin-left: 270px;
-    margin-top: 20px;
-    background-color: #64806F;
-    box-shadow: 0px 0px 10px rgb(119, 153, 126);
-    border-radius: 8px;
+    position: absolute; /* Absolutely positioned */
+    color: white; /* White text */
+    padding: 20px; /* Padding inside the box */
+    width: 1000px; /* Fixed width */
+    height: 850px; /* Fixed height */
+    margin-left: 270px; /* Space from left */
+    margin-top: 20px; /* Space from top */
+    background-color: #64806F; /* Greenish background */
+    box-shadow: 0px 0px 10px rgb(119, 153, 126); /* Soft shadow */
+    border-radius: 8px; /* Rounded corners */
 }
-
+ 
+/* Placeholder text styling for InfoBox */
 .InfoBox::placeholder {
-    color: white;
-    opacity: 0.7;
+    color: white; /* White placeholder */
+    opacity: 0.7; /* Slightly transparent */
 }
-
+ 
+/* InfoBox container styling */
 .InfoBox {
-    background: url('Icons/home.png') no-repeat;
-    background-size: 20px 20px;
-    background-position: 10px;
-    width: 323px;
-    height: 35px;
-    background-color: #64806F;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding-left: 40px;
-    color: white;
-    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+    background: url('Icons/home.png') no-repeat; /* Background image */
+    background-size: 20px 20px; /* Icon size */
+    background-position: 10px; /* Icon position */
+    width: 323px; /* Width of the input box */
+    height: 35px; /* Height of the input box */
+    background-color: #64806F; /* Greenish background */
+    border: 1px solid white; /* White border */
+    border-radius: 5px; /* Rounded corners */
+    padding-left: 40px; /* Padding to avoid overlap with the icon */
+    color: white; /* White text */
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2); /* Light shadow around the box */
 }
-
+ 
+/* Input fields styled for dark mode */
 input {
-    color-scheme: dark;
+    color-scheme: dark; /* Use dark mode for inputs */
 }
