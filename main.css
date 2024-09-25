@@ -275,6 +275,38 @@ button:hover {
     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2); /* Light shadow around the box */
 }
  
+/* Current Message Box */
+.MessagesBox1 {
+    position: absolute; /* Absolutely positioned */
+    color: white; /* White text */
+    width: 600px; /* Width of the input box */
+    height: 25px; /* Height of the input box */
+    margin-left: 310px; /* Space from left */
+    background-color: rgb(100, 128, 111); /* Greenish background */
+    padding: 30px; /* Padding inside the box */
+    border-width: 2px; /* Border Size */
+    border-style: solid; /* Border Style */
+    border-color: black; /* Border Color */
+    border-radius: 8px; /* Rounded corners */
+    z-index: 1;
+}
+
+
+/* Current Message Box */
+.MessagesBox2 {
+    position: absolute; /* Absolutely positioned */
+    color: white; /* White text */
+    width: 600px; /* Width of the input box */
+    height: 800px; /* Height of the input box */
+    margin-left: 310px; /* Space from left */
+    background-color: rgb(100, 128, 111); /* Greenish background */
+    padding: 30px; /* Padding inside the box */
+    border-width: 2px; /* Border Size */
+    border-style: solid; /* Border Style */
+    border-color: black; /* Border Color */
+    border-radius: 8px; /* Rounded corners */
+}
+
 /* Input fields styled for dark mode */
 input {
     color-scheme: dark; /* Use dark mode for inputs */
