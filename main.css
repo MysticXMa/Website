@@ -477,5 +477,25 @@ button.AE:hover {
     margin-left: 240px;
     margin-top: -30px;
     position: absolute;
+}
 
+.capture {
+    position: absolute;
+    margin-left: 420px;
+    width: 575px;
+    height: 755px;
+}
+
+.textBox {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #64b283; /* Greenish background */
+    box-shadow: 0px 0px 10px rgb(92, 226, 119); /* Soft shadow */
+    border-radius: 8px; /* Rounded corners */
+    padding: 14px; /* Add padding for better text spacing */
+    display: inline-block; /* Ensure the box fits the text content */
+    max-width: 80%; /* Limits the width */
+    word-wrap: break-word; /* Wrap long text */
+    color: white; /* Text color to stand out on background */
+    font-family: Arial, sans-serif; /* Font style */
 }
