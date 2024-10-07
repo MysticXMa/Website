@@ -87,6 +87,7 @@ button {
     padding: 3px; /* Padding inside the button */
     color: white; /* White text */
     box-shadow: 0px 0px 5px rgb(59, 103, 67); /* Light shadow for 3D effect */
+    cursor: pointer;
 }
  
 /* Button animation: slightly lifts when hovered */
@@ -152,8 +153,8 @@ button:hover {
     width: 100%; /* Full width */
     box-sizing: border-box; /* Includes padding in the element’s width */
     background-color: rgba(215, 215, 215, 0.375); /* Semi-transparent grey background */
-    border: 2px solid #19d232; /* Green border */
-    box-shadow: 0 0 10px #19d232; /* Green shadow */
+    border: 1px solid #000000; /* Green border */
+    box-shadow: 2px 2px 0px #000000; /* Green shadow */
     border-radius: 10px; /* Rounded corners */
     transform: translateY(0); /* Initial position */
     transition: transform 0.5s ease-in-out; /* Smooth hover animation */
@@ -258,6 +259,7 @@ button:hover {
 .InfoBox::placeholder {
     color: white; /* White placeholder */
     opacity: 0.7; /* Slightly transparent */
+    
 }
  
 /* InfoBox container styling */
@@ -273,6 +275,7 @@ button:hover {
     padding-left: 40px; /* Padding to avoid overlap with the icon */
     color: white; /* White text */
     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2); /* Light shadow around the box */
+    
 }
  
 /* Current Message Box */
@@ -284,7 +287,7 @@ button:hover {
     margin-left: 310px; /* Space from left */
     background-color: rgb(100, 128, 111); /* Greenish background */
     padding: 30px; /* Padding inside the box */
-    border-width: 2px; /* Border Size */
+    border-width: 1px; /* Border Size */
     border-style: solid; /* Border Style */
     border-color: black; /* Border Color */
     border-radius: 8px; /* Rounded corners */
@@ -301,7 +304,7 @@ button:hover {
     margin-left: 310px; /* Space from left */
     background-color: rgb(100, 128, 111); /* Greenish background */
     padding: 30px; /* Padding inside the box */
-    border-width: 2px; /* Border Size */
+    border-width: 1px; /* Border Size */
     border-style: solid; /* Border Style */
     border-color: black; /* Border Color */
     border-radius: 8px; /* Rounded corners */
@@ -310,4 +313,104 @@ button:hover {
 /* Input fields styled for dark mode */
 input {
     color-scheme: dark; /* Use dark mode for inputs */
+}
+
+.SellCar {
+    background-color: #58695F;
+    border-radius: 7px;
+}
+
+.Offers {
+    position: absolute; /* Absolutely positioned */
+    color: white; /* White text */
+    padding: 20px; /* Padding inside the box */
+    width: 1000px; /* Fixed width */
+    height: 850px; /* Fixed height */
+    margin-left: 270px; /* Space from left */
+    margin-top: 20px; /* Space from top */
+    background-color: #64806F; /* Greenish background */
+    box-shadow: 0px 0px 10px rgb(119, 153, 126); /* Soft shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.imagesize {
+    background-repeat: no-repeat;
+    background-size: 40%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 100px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 49, 49);
+    height: 30px;
+    width: 100px;
+    display: flex;
+    margin-left: 20px;
+}
+
+.buttonimage {
+    width: 40px;
+}
+
+.seconddealer {
+    margin-top: 210px;
+    position: absolute;
+}
+
+.thirddealer {
+    margin-top: 420px;
+    position: absolute;
+}
+
+.claudia {
+    height: 50px;
+    width: 50px;
+}
+
+.CarData {
+    position: absolute;
+    text-align: start;
+    margin-left: 690px;
+    margin-top: 1500px;
+}
+
+.textts {
+    margin-top: 70px;
+    margin-left: -50px;
+}
+
+.CarData2 {
+    position: absolute;
+    text-align: start;
+    margin-left: 1050px;
+    margin-top: 1554px;
+}
+
+.vehiclehistory {
+    position: absolute;
+    text-align: start;
+    margin-left: 640px;
+    margin-top: 1920px;
+}
+
+.vehiclehistory2 {
+    position: absolute;
+    text-align: start;
+    margin-left: 1050px;
+    margin-top: 1920px;
+}
+
+.technicaldata {
+    position: absolute;
+    text-align: start;
+    margin-left: 640px;
+    margin-top: 2260px;
+}
+
+.technicaldata2 {
+    position: absolute;
+    text-align: start;
+    margin-left: 1050px;
+    margin-top: 2260px;
 }
