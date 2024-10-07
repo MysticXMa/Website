@@ -54,7 +54,7 @@ a {
 /* Sidebar style on the left */
 .Menuleft {
     background-color: #AFE9C6; /* Light green background */
-    height: 4000px; /* Large height for content */
+    height: 2500px; /* Large height for content */
     width: 248px; /* Fixed width for the sidebar */
     padding-top: 40px; /* Padding from the top */
 }
@@ -242,6 +242,19 @@ button:hover {
 }
  
 /* Settings container styling */
+.Messages {
+    position: absolute; /* Absolutely positioned */
+    color: white; /* White text */
+    padding: 20px; /* Padding inside the box */
+    width: 1000px; /* Fixed width */
+    height: 850px; /* Fixed height */
+    margin-left: 270px; /* Space from left */
+    margin-top: 20px; /* Space from top */
+    background-color: #64806F; /* Greenish background */
+    box-shadow: 0px 0px 10px rgb(119, 153, 126); /* Soft shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+
 .Settings {
     position: absolute; /* Absolutely positioned */
     color: white; /* White text */
@@ -282,9 +295,9 @@ button:hover {
 .MessagesBox1 {
     position: absolute; /* Absolutely positioned */
     color: white; /* White text */
-    width: 600px; /* Width of the input box */
+    width: 530px; /* Width of the input box */
     height: 25px; /* Height of the input box */
-    margin-left: 310px; /* Space from left */
+    margin-left: 410px; /* Space from left */
     background-color: rgb(100, 128, 111); /* Greenish background */
     padding: 30px; /* Padding inside the box */
     border-width: 1px; /* Border Size */
@@ -299,9 +312,9 @@ button:hover {
 .MessagesBox2 {
     position: absolute; /* Absolutely positioned */
     color: white; /* White text */
-    width: 600px; /* Width of the input box */
+    width: 530px; /* Width of the input box */
     height: 800px; /* Height of the input box */
-    margin-left: 310px; /* Space from left */
+    margin-left: 410px; /* Space from left */
     background-color: rgb(100, 128, 111); /* Greenish background */
     padding: 30px; /* Padding inside the box */
     border-width: 1px; /* Border Size */
@@ -413,4 +426,56 @@ input {
     text-align: start;
     margin-left: 1050px;
     margin-top: 2260px;
+}
+
+.allmessages {
+    overflow: scroll;
+    height: 450px;
+    width: 375px;
+    overflow-x: hidden;
+}
+
+.allmessages>div {
+    padding: 300px;
+}
+
+button.AE {
+    border: 0; /* Remove border */
+    background-color: #7fae9200; /* Light green background */
+    text-align: left; /* Align text to the left */
+    width: 335px; /* Button width */
+    border-radius: 0px; /* Rounded corners */
+    margin-bottom: 0px; /* Space below the button */
+    margin-left: -2px; /* Space to the left */
+    color: white; /* White text */
+    cursor: pointer;
+    box-shadow: none;
+    font-size: 1rem;
+    padding-bottom: 10px;
+    height: 70px;
+}
+
+button.AE:hover {
+    transform: translateX(5px); /* Moves up on hover */
+    border: solid 1px black;
+    background-color: #445c4e;
+}
+
+.pftext {
+    margin-left: 100px;
+    width: 130px;
+    margin-top: -45px;
+}
+
+.notificationball {
+    margin-left: 140px;
+    margin-top: -30px;
+    position: absolute;
+}
+
+.notificationball2 {
+    margin-left: 240px;
+    margin-top: -30px;
+    position: absolute;
+
 }
