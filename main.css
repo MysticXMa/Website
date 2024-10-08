@@ -1,331 +1,295 @@
-/* General body settings, changing background color, font style, and margin */
 body {
-    background-color: #F6F6F6; /* Light grey background */
-    font-family: "DM Sans", sans-serif; /* Use DM Sans font, or fallback to sans-serif */
-    margin: 0; /* Remove default margin (prevents white borders) */
-    overflow-y: scroll; /* Ensure vertical scroll if needed */
-    overflow-x: hidden; /* Hide horizontal scroll */
+    background-color: #F6F6F6;
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
- 
-/* Style for the search TextBox */
+
 .TextBox {
-    background: url('Icons/search.png') no-repeat; /* Background image for search icon */
-    position: absolute; /* Absolutely positioned within its parent */
-    margin: -5px 0px 0px 300px; /* Adjusting its position with negative top margin */
-    background-size: 30px 30px; /* Size of the background icon */
-    background-position: 5px center; /* Position the icon inside the box */
-    border: 0; /* No border */
-    width: 330px; /* Width of the search box */
-    height: 30px; /* Height of the search box */
-    background-color: #7FAE92; /* Light green background */
-    box-shadow: 0px 0px 5px rgb(59, 103, 67); /* Soft green shadow around the box */
-    border-radius: 4px; /* Rounded corners */
-    padding-left: 40px; /* Padding to ensure text doesn’t overlap with the icon */
-    color: white; /* White text color */
-    font-size: 16px; /* Font size for text */
+    background: url('Icons/search.png') no-repeat;
+    position: absolute;
+    margin: -5px 0px 0px 300px;
+    background-size: 30px 30px;
+    background-position: 5px center;
+    border: 0;
+    width: 330px;
+    height: 30px;
+    background-color: #7FAE92;
+    box-shadow: 0px 0px 5px rgb(59, 103, 67);
+    border-radius: 4px;
+    padding-left: 40px;
+    color: white;
+    font-size: 16px;
 }
- 
-/* Style for the logo container */
+
 .Logo {
-    background: url('Icons/logo.png') no-repeat; /* Logo background image */
-    position: absolute; /* Absolute positioning */
-    margin: 5px 0px 0px 50px; /* Positioning logo from the left */
-    background-size: 30px 30px; /* Size of the logo */
-    width: 330px; /* Width of the logo container */
-    height: 30px; /* Height of the logo container */
-    padding-left: 40px; /* Padding to align text away from logo */
-    font-size: 16px; /* Font size of the logo text */
+    background: url('Icons/logo.png') no-repeat;
+    position: absolute;
+    margin: 5px 0px 0px 50px;
+    background-size: 30px 30px;
+    width: 330px;
+    height: 30px;
+    padding-left: 40px;
+    font-size: 16px;
 }
- 
-/* Global link styles */
+
 a {
-    color: inherit; /* Links inherit the current text color */
-    text-decoration: none; /* Remove underline from links */
+    color: inherit;
+    text-decoration: none;
 }
- 
-/* Main menu bar style */
+
 .Menu {
-    background-color: hsl(144, 57%, 80%); /* Light green background using HSL */
-    color: white; /* White text */
-    width: auto; /* Automatically adjusts width */
-    height: 70px; /* Fixed height */
+    background-color: hsl(144, 57%, 80%);
+    color: white;
+    width: auto;
+    height: 70px;
 }
- 
-/* Sidebar style on the left */
+
 .Menuleft {
-    background-color: #AFE9C6; /* Light green background */
-    height: 2500px; /* Large height for content */
-    width: 248px; /* Fixed width for the sidebar */
-    padding-top: 40px; /* Padding from the top */
+    background-color: #AFE9C6;
+    height: 2500px;
+    width: 248px;
+    padding-top: 40px;
 }
- 
-/* Button to indicate current active section */
+
 .currentbtn {
-    background-color: #58695F; /* Darker green for the active button */
+    background-color: #58695F;
 }
- 
-/* Styling for small images (icons) */
+
 .img {
-    width: 18px; /* Fixed width for icons */
-    height: 18px; /* Fixed height for icons */
-    padding-right: 8px; /* Space to the right of the icon */
-    padding-left: 5px; /* Space to the left of the icon */
-    overflow: hidden; /* Prevent overflow */
-    -webkit-filter: grayscale(100%); /* Apply grayscale filter (Safari support) */
-    filter: grayscale(100%); /* Grayscale for other browsers */
+    width: 18px;
+    height: 18px;
+    padding-right: 8px;
+    padding-left: 5px;
+    overflow: hidden;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
- 
-/* Basic button styles */
+
 button {
-    border: 0; /* Remove border */
-    background-color: #7FAE92; /* Light green background */
-    text-align: left; /* Align text to the left */
-    width: 155px; /* Button width */
-    border-radius: 4px; /* Rounded corners */
-    margin-bottom: 10px; /* Space below the button */
-    margin-left: 35px; /* Space to the left */
-    padding: 3px; /* Padding inside the button */
-    color: white; /* White text */
-    box-shadow: 0px 0px 5px rgb(59, 103, 67); /* Light shadow for 3D effect */
+    border: 0;
+    background-color: #7FAE92;
+    text-align: left;
+    width: 155px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-left: 35px;
+    padding: 3px;
+    color: white;
+    box-shadow: 0px 0px 5px rgb(59, 103, 67);
     cursor: pointer;
 }
- 
-/* Button animation: slightly lifts when hovered */
+
 button {
-    transform: translateY(0); /* Initial position */
-    transition: transform 0.2s ease-in-out; /* Smooth transition */
+    transform: translateY(0);
+    transition: transform 0.2s ease-in-out;
 }
- 
+
 button:hover {
-    transform: translateY(-2px); /* Moves up on hover */
+    transform: translateY(-2px);
 }
- 
-/* General container for information boxes */
+
 .Information {
-    transform: translateY(0); /* Initial position */
-    transition: transform 0.5s ease-in-out; /* Smooth animation */
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
 }
- 
+
 .Information:hover {
-    transform: translateY(-5px); /* Moves up more on hover */
+    transform: translateY(-5px);
 }
- 
-/* Styling for information boxes */
+
 .Information {
-    position: absolute; /* Positioned absolutely */
-    padding: 20px; /* Padding inside the container */
-    width: 650px; /* Width of the box */
-    height: 250px; /* Height of the box */
-    margin-left: 270px; /* Space from the left */
-    margin-top: 20px; /* Space from the top */
-    background-color: #fff; /* White background */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Light shadow */
-    border-radius: 5px; /* Rounded corners */
+    position: absolute;
+    padding: 20px;
+    width: 650px;
+    height: 250px;
+    margin-left: 270px;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
- 
-/* Placeholder text color in the search box */
+
 .TextBox::placeholder {
-    color: white; /* White placeholder text */
-    opacity: 1; /* Full opacity */
+    color: white;
+    opacity: 1;
 }
- 
-/* Footer button styling */
+
 .FooterButtons {
-    padding-top: 100%; /* Pushed to bottom by adding large padding */
+    padding-top: 100%;
 }
- 
-/* Styling for car containers in a list */
+
 .Cars > div {
-    display: flex; /* Flexbox layout */
-    flex-wrap: nowrap; /* No wrapping of items */
-    background-color: #f1f1f1; /* Light grey background */
-    margin-left: 270px; /* Space from the left */
-    line-height: 20px; /* Line height of 20px */
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #f1f1f1;
+    margin-left: 270px;
+    line-height: 20px;
 }
- 
-/* Styling for each car container */
+
 .CarContainer {
-    position: absolute; /* Positioned absolutely */
-    z-index: 10; /* Higher stacking order */
-    margin: 5% auto; /* Centered with margins */
-    padding: 20px; /* Padding inside */
-    max-width: 350px; /* Maximum width */
-    width: 100%; /* Full width */
-    box-sizing: border-box; /* Includes padding in the element’s width */
-    background-color: rgba(215, 215, 215, 0.375); /* Semi-transparent grey background */
-    border: 1px solid #000000; /* Green border */
-    box-shadow: 2px 2px 0px #000000; /* Green shadow */
-    border-radius: 10px; /* Rounded corners */
-    transform: translateY(0); /* Initial position */
-    transition: transform 0.5s ease-in-out; /* Smooth hover animation */
+    position: absolute;
+    z-index: 10;
+    margin: 5% auto;
+    padding: 20px;
+    max-width: 350px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(215, 215, 215, 0.375);
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 0px #000000;
+    border-radius: 10px;
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
 }
- 
-/* Car information title styling */
+
 .CarInfo h1 {
-    font-size: 20px; /* Font size for car titles */
+    font-size: 20px;
 }
- 
-/* Styling for car description paragraphs */
+
 .CarInfo p {
-    margin: 5px 0; /* Margin above and below each paragraph */
+    margin: 5px 0;
 }
- 
-/* Car image styling */
+
 .CarInfo .Car {
-    width: 100%; /* Full width for car images */
-    height: auto; /* Keep aspect ratio */
+    width: 100%;
+    height: auto;
 }
- 
-/* Heart icon inside the car info box */
+
 .CarInfo .HeartIcon {
-    width: 20px; /* Small icon size */
-    float: right; /* Aligns the heart icon to the right */
-    margin-right: 10px; /* Space to the right */
-    cursor: pointer; /* Pointer cursor on hover */
+    width: 20px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
 }
- 
-/* Car detail section layout */
+
 .CarDetails {
-    display: flex; /* Flex layout for details */
-    justify-content: space-between; /* Space between detail items */
-    align-items: center; /* Aligns items vertically */
-    margin-top: 10px; /* Space above the section */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
 }
- 
-/* Icons within the car details */
+
 .DetailIcon {
-    width: 20px; /* Icon width */
-    margin-right: 5px; /* Space to the right */
+    width: 20px;
+    margin-right: 5px;
 }
- 
-/* Price styling for cars */
+
 .CarPrice {
-    font-size: 20px; /* Large font size for the price */
-    color: #000; /* Black text */
+    font-size: 20px;
+    color: #000;
 }
- 
-/* Bolded price styling */
+
 .CarPrice b {
-    color: #A8A8A8; /* Grey color for the bolded price */
+    color: #A8A8A8;
 }
- 
-/* Options styling */
+
 .Options {
-    border: 3px rgb(255, 255, 255); /* White border */
-    border-radius: 10px; /* Rounded corners */
-    border-style: solid; /* Solid border */
+    border: 3px rgb(255, 255, 255);
+    border-radius: 10px;
+    border-style: solid;
 }
- 
-/* Slight hover lift for car container */
+
 .CarContainer:hover {
-    transform: translateY(-5px); /* Moves up when hovered */
-    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
 }
- 
-/* Test class for transition effect on color */
+
 .test {
-    color: rgb(50, 50, 255); /* Initial color: blue */
-    transition: color 1s ease-in-out; /* Smooth color transition */
+    color: rgb(50, 50, 255);
+    transition: color 1s ease-in-out;
 }
- 
+
 .test:hover {
-    color: red; /* Changes to red when hovered */
-    transition: color 0.2s ease-in-out; /* Faster transition when hovered */
+    color: red;
+    transition: color 0.2s ease-in-out;
 }
- 
-/* Positioning for Start section and icon */
+
 .Start, .Start > img {
-    position: absolute; /* Absolute position */
-    margin-top: 10px; /* Space from top */
-    right: 10px; /* Aligns to the right */
-    width: 30px; /* Icon width */
+    position: absolute;
+    margin-top: 10px;
+    right: 10px;
+    width: 30px;
 }
- 
-/* Settings container styling */
+
 .Messages {
-    position: absolute; /* Absolutely positioned */
-    color: white; /* White text */
-    padding: 20px; /* Padding inside the box */
-    width: 1000px; /* Fixed width */
-    height: 850px; /* Fixed height */
-    margin-left: 270px; /* Space from left */
-    margin-top: 20px; /* Space from top */
-    background-color: #64806F; /* Greenish background */
-    box-shadow: 0px 0px 10px rgb(119, 153, 126); /* Soft shadow */
-    border-radius: 8px; /* Rounded corners */
+    position: absolute;
+    color: white;
+    padding: 20px;
+    width: 1000px;
+    height: 850px;
+    margin-left: 270px;
+    margin-top: 20px;
+    background-color: #64806F;
+    box-shadow: 0px 0px 10px rgb(119, 153, 126);
+    border-radius: 8px;
 }
 
 .Settings {
-    position: absolute; /* Absolutely positioned */
-    color: white; /* White text */
-    padding: 20px; /* Padding inside the box */
-    width: 1000px; /* Fixed width */
-    height: 850px; /* Fixed height */
-    margin-left: 270px; /* Space from left */
-    margin-top: 20px; /* Space from top */
-    background-color: #64806F; /* Greenish background */
-    box-shadow: 0px 0px 10px rgb(119, 153, 126); /* Soft shadow */
-    border-radius: 8px; /* Rounded corners */
+    position: absolute;
+    color: white;
+    padding: 20px;
+    width: 1000px;
+    height: 850px;
+    margin-left: 270px;
+    margin-top: 20px;
+    background-color: #64806F;
+    box-shadow: 0px 0px 10px rgb(119, 153, 126);
+    border-radius: 8px;
 }
- 
-/* Placeholder text styling for InfoBox */
+
 .InfoBox::placeholder {
-    color: white; /* White placeholder */
-    opacity: 0.7; /* Slightly transparent */
-    
+    color: white;
+    opacity: 0.7;
 }
- 
-/* InfoBox container styling */
+
 .InfoBox {
-    background: url('Icons/home.png') no-repeat; /* Background image */
-    background-size: 20px 20px; /* Icon size */
-    background-position: 10px; /* Icon position */
-    width: 323px; /* Width of the input box */
-    height: 35px; /* Height of the input box */
-    background-color: #64806F; /* Greenish background */
-    border: 1px solid white; /* White border */
-    border-radius: 5px; /* Rounded corners */
-    padding-left: 40px; /* Padding to avoid overlap with the icon */
-    color: white; /* White text */
-    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2); /* Light shadow around the box */
+    background: url('Icons/home.png') no-repeat;
+    background-size: 20px 20px;
+    background-position: 10px;
+    width: 323px;
+    height: 35px;
+    background-color: #64806F;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 40px;
+    color: white;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
     
 }
- 
-/* Current Message Box */
+
 .MessagesBox1 {
-    position: absolute; /* Absolutely positioned */
-    color: white; /* White text */
-    width: 530px; /* Width of the input box */
-    height: 25px; /* Height of the input box */
-    margin-left: 410px; /* Space from left */
-    background-color: rgb(100, 128, 111); /* Greenish background */
-    padding: 30px; /* Padding inside the box */
-    border-width: 1px; /* Border Size */
-    border-style: solid; /* Border Style */
-    border-color: black; /* Border Color */
-    border-radius: 8px; /* Rounded corners */
+    position: absolute;
+    color: white;
+    width: 530px;
+    height: 25px;
+    margin-left: 410px;
+    background-color: rgb(100, 128, 111);
+    padding: 30px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 8px;
     z-index: 1;
 }
 
-
-/* Current Message Box */
 .MessagesBox2 {
-    position: absolute; /* Absolutely positioned */
-    color: white; /* White text */
-    width: 530px; /* Width of the input box */
-    height: 800px; /* Height of the input box */
-    margin-left: 410px; /* Space from left */
-    background-color: rgb(100, 128, 111); /* Greenish background */
-    padding: 30px; /* Padding inside the box */
-    border-width: 1px; /* Border Size */
-    border-style: solid; /* Border Style */
-    border-color: black; /* Border Color */
-    border-radius: 8px; /* Rounded corners */
+    position: absolute;
+    color: white;
+    width: 530px;
+    height: 800px;
+    margin-left: 410px;
+    background-color: rgb(100, 128, 111);
+    padding: 30px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 8px;
 }
 
-/* Input fields styled for dark mode */
 input {
-    color-scheme: dark; /* Use dark mode for inputs */
+    color-scheme: dark;
 }
 
 .SellCar {
@@ -334,16 +298,16 @@ input {
 }
 
 .Offers {
-    position: absolute; /* Absolutely positioned */
-    color: white; /* White text */
-    padding: 20px; /* Padding inside the box */
-    width: 1000px; /* Fixed width */
-    height: 850px; /* Fixed height */
-    margin-left: 270px; /* Space from left */
-    margin-top: 20px; /* Space from top */
-    background-color: #64806F; /* Greenish background */
-    box-shadow: 0px 0px 10px rgb(119, 153, 126); /* Soft shadow */
-    border-radius: 8px; /* Rounded corners */
+    position: absolute;
+    color: white;
+    padding: 20px;
+    width: 1000px;
+    height: 850px;
+    margin-left: 270px;
+    margin-top: 20px;
+    background-color: #64806F;
+    box-shadow: 0px 0px 10px rgb(119, 153, 126);
+    border-radius: 8px;
 }
 
 .imagesize {
@@ -440,14 +404,14 @@ input {
 }
 
 button.AE {
-    border: 0; /* Remove border */
-    background-color: #7fae9200; /* Light green background */
-    text-align: left; /* Align text to the left */
-    width: 335px; /* Button width */
-    border-radius: 0px; /* Rounded corners */
-    margin-bottom: 0px; /* Space below the button */
-    margin-left: -2px; /* Space to the left */
-    color: white; /* White text */
+    border: 0;
+    background-color: #7fae9200;
+    text-align: left;
+    width: 335px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    margin-left: -2px;
+    color: white;
     cursor: pointer;
     box-shadow: none;
     font-size: 1rem;
@@ -456,7 +420,7 @@ button.AE {
 }
 
 button.AE:hover {
-    transform: translateX(5px); /* Moves up on hover */
+    transform: translateX(5px);
     border: solid 1px black;
     background-color: #445c4e;
 }
@@ -489,13 +453,13 @@ button.AE:hover {
 .textBox {
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #64b283; /* Greenish background */
-    box-shadow: 0px 0px 10px rgb(92, 226, 119); /* Soft shadow */
-    border-radius: 8px; /* Rounded corners */
-    padding: 14px; /* Add padding for better text spacing */
-    display: inline-block; /* Ensure the box fits the text content */
-    max-width: 80%; /* Limits the width */
-    word-wrap: break-word; /* Wrap long text */
-    color: white; /* Text color to stand out on background */
-    font-family: Arial, sans-serif; /* Font style */
+    background-color: #64b283;
+    box-shadow: 0px 0px 10px rgb(92, 226, 119);
+    border-radius: 8px;
+    padding: 14px;
+    display: inline-block;
+    max-width: 80%;
+    word-wrap: break-word;
+    color: white;
+    font-family: Arial, sans-serif;
 }
